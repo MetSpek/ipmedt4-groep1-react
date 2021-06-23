@@ -1,0 +1,30 @@
+.winkelSection__previewSection__btnSection {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .previewSection__btnSection__button {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    border: 6px solid var(--secondary-color);
+    margin: 0 auto;
+  }
+
+  .button--koop {
+    padding: 1rem;
+  }
+
+  .button--select {
+    padding: 1rem;
+  }
+
+  .previewSection__btnSection__button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border: 6px solid var(--primary-color);
+  }

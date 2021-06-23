@@ -1,0 +1,149 @@
+article.navigatie {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navigatie__knopSectie{
+  z-index: 5;
+}
+
+.navigatie__knopSectie__btn {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 10rem;
+  margin-left: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transform: translateX(-20%);
+  z-index: 4;
+}
+
+.navigatie__knopSectie__btn:hover{
+  cursor: pointer;
+}
+
+.navigatie__modal {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(192, 177, 177, 0.85);
+}
+
+.navigatie__modal__content {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 80%;
+  z-index: 4;
+}
+
+.navigatie__modal__content p{
+  font-family: var(--fnt-assistant);
+  font-size: 1.5rem;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navigatie__modal__content__link {
+  margin-top: 2rem;
+  border: 0.2rem solid var(--secondary-color);
+  border-radius: 1.2rem;
+  overflow: visible;
+  background-color: white;
+}
+
+.navigatie__modal__content__link a, .hulp__section{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+}
+
+.navigatie__modal__content__link a p, .hulp__section p{
+  width: 100%;
+  padding: 1rem;
+}
+
+.eclipse {
+  border: 0.2rem solid var(--secondary-color);
+  border-radius: 50%;
+  position: absolute;
+  right: 10%;
+  height: 5.5rem;
+  width: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transform: translateX(100%);
+}
+
+.navigatie__modal__content__link__img {
+  height: 60%;
+  width: auto;
+}
+
+.margintop--groot {
+  margin-top: 6rem;;
+}
+
+.display--none {
+  display: none;
+}
+
+.display--block {
+  display: block;
+  opacity: 1;
+}
+
+.hulp__section:hover{
+  cursor: pointer;
+}
+.hulp__section__keuze__boekenlijst__h2,
+.hulp__section__keuze__bibliotheek__h2,
+.hulp__section__keuze__boekenkast__h2,
+.hulp__section__keuze__winkel__h2 {
+    text-decoration: none;
+    font-family: var(--fnt-assistant);
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .navigatie__modal__content {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .hulp__section__keuze {
+        width: 85%;
+        margin: 0 auto;
+    }
+}

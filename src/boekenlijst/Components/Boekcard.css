@@ -1,0 +1,145 @@
+.boekcardlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+
+    margin: 0 auto;
+    width: 95%;
+}
+
+.boekencard{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    max-width: 100%;
+    height: max-content;
+
+    font-family: var(--fnt-assistant);
+}
+
+.boekencard__imagesection{
+    order: 1;
+    flex-grow: 1;
+
+    padding-right: 1rem;
+    max-width: 30%;
+}
+
+.boekencard__imagesection__figure__img{
+    max-width: 100%;
+    height: auto;
+}
+
+.boekencard__header{
+    order: 2;
+    flex-grow: 6;
+}
+
+.boekencard__header__titel{
+    font-size: 2.2rem;
+
+}
+
+.boekencard__header__auteur{
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+.boekencard__buttonsection{
+    order: 3;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0.6rem;
+    top: 40%;
+
+    margin: 0 auto;
+    
+}
+
+.boekencard__buttonsection__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0 auto;
+    width: 4.5rem;
+    height: 4.5rem;
+
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    background-color: var(--primary-color);
+    border: solid 0.3rem var(--secondary-color);
+    border-radius: 100%;
+    box-shadow: 0.1rem 0.2rem 0 #2B7679;
+}
+
+.boekencard__buttonsection__link:hover{
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+
+.boekencard__buttonsection__link:active{
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+@media (min-width: 650px) {
+    .boekcardlist{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }  
+
+    .boekencard{
+        flex-direction: column;
+
+        width: 35rem;
+        height: 35rem;
+
+        border-radius: 2rem;
+        border: solid 0.8rem var(--primary-color);
+    }
+
+    .boekencard__imagesection{
+        padding-right: 0;
+
+        max-width: 100%;
+        height: auto;
+
+        overflow: hidden;
+
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .boekencard__header{
+        padding: 0.5rem 1rem;
+    }
+
+    .boekencard__buttonsection{
+        right: 0.5rem;
+        bottom: -14rem;
+        
+    }
+}
+
+@media (min-width: 900px) {
+    .boekcardlist{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }    
+
+    
+}

@@ -1,0 +1,58 @@
+.winkelSection__itemsSection {
+  height: 25vh;
+  background-color: #A1EDA5;
+  overflow-y: scroll;
+}
+
+.winkelSection__itemList {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.2rem;
+}
+
+.item__figure {
+  background-color: #F7F7F7;
+  width: 8rem;
+  height: 8rem;
+  align-self: flex-start;
+  border-radius: 15px;
+  padding: .4rem;
+  overflow: hidden;
+}
+
+.item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item__text {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.6rem;
+  font-weight: 600;
+}
+
+.img--radius {
+  border-radius: 15px;
+}
+
+/* ===== STYLING SCROLLBAR ===== */
+.winkelSection__itemsSection::-webkit-scrollbar {
+  width: 1rem;
+  padding: 2px;
+}
+
+.winkelSection__itemsSection::-webkit-scrollbar-track{
+  background: var(--background-color);
+}
+
+.winkelSection__itemsSection::-webkit-scrollbar-thumb{
+  border-radius: 1rem;
+  background: #252525;
+}
+
+.winkelSection__itemsSection::-webkit-scrollbar-thumb:hover{
+  background: #676767;
+}
